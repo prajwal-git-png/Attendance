@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Menu</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      </style>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+      p {
+        font-family: Poppins;
+      }
+      a {
+        top: 20px;
+        margin: 10px 11px;
+        right: 12px;
+        padding: 0.5em;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 10px;
+
+        background-color: #1d1d1d;
+        color: #fff;
+        font-family: Poppins;
+        border: #0c00b6 0.2em solid;
+        border-radius: 25px;
+        text-align: center;
+      }
+
+      a:hover {
+        background-color: #3654ff;
+        cursor: pointer;
+      }
+
+      a:active {
+        box-shadow: none;
+        top: 5px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        height: 100vh; /* Set container height to viewport height */
+        text-align: center; /* Align text center */
+      }
+
+      .button-style {
+        background-color: #1d1d1d;
+        color: #fff;
+        width: 8.5em;
+        height: 2.9em;
+        font-family: Poppins;
+        border: #0c00b6 0.2em solid;
+        border-radius: 25px;
+        text-align: center; /* Center text */
+        line-height: 2.9em; /* Vertically center text */
+        text-decoration: none; /* Remove underline */
+        transition: all 0.6s ease;
+        margin: 10px; /* Add some margin between buttons */
+      }
+
+      .button-style:hover {
+        background-color: #2d2d2d; /* Darken background on hover */
+        color: #eaeaea; /* Lighten text color on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="font-size: 50px; font-weight: 600; font-family: Poppins">
+        Main Menu
+      </h1>
+      <p style="font-size: 25px; font-weight: 500">
+        This is the Homepage of the Attendance System.
+      </p>
+      <p><a href="/attendance" class="button-style">View Attendance</a></p>
+      <p><a href="/generate" class="button-style">Generate QR Code</a></p>
+      <p>
+        <a href="/scan_qr" class="button-style">Scan QR Code for Attendance</a>
+      </p>
+    </div>
+  </body>
+</html>
